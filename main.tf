@@ -15,6 +15,9 @@ provider "aws" {
       Project       = var.project
       Environment   = var.environment
       Billable = var.billable
+      Owner       = "Globomantics"
+      Project     = var.project
+      Environment = var.environment
     }
   }
 }
@@ -59,10 +62,10 @@ resource "aws_security_group" "diamond_dogs" {
   }
 
   egress {
-    from_port       = 0
-    to_port         = 0
-    protocol        = "-1"
-    cidr_blocks     = ["0.0.0.0/0"]
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {

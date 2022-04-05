@@ -11,6 +11,10 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
+      Owner         = "Globomantics"
+      Project       = var.project
+      Environment   = var.environment
+      Billable = var.billable
       Owner       = "Globomantics"
       Project     = var.project
       Environment = var.environment

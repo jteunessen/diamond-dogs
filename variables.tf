@@ -10,6 +10,11 @@ variable "project" {
   default = "diamond_dogs"
 }
 
+variable "billable" {
+  type = string
+  description = "(Required) Billable code for project."
+}
+
 variable "environment" {
   type        = string
   description = "(Optional) Application environment for deployment, defaults to development."
